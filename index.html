@@ -21,10 +21,10 @@
         let z3 = (Math.random()*1000).toFixed(2);
         let z4 = [1,2,3,4,5].reduce((a,b)=>a+b,0);
 
-        const a9 = "Tg==";
-        const b8 = "jU=";
+        const a9 = "TmM=";
+        const b8 = "VQ==";
         const c7 = "OA==";
-        let f6 = a9+b8+c7;
+        let f6 = atob(a9)+atob(b8)+atob(c7);
 
         const g1 = "cGFudGhlb257YWxs";
         const g2 = "dGhlYmVzdCF9";
@@ -44,8 +44,7 @@
 
         function finalCheck(){
             let v7 = document.getElementById("i1").value;
-            let k9 = atob(f6);
-            if(v7===k9){
+            if(v7===f6){
                 let j8 = g1+g2;
                 let h5 = atob(j8);
                 console["log"](h5);
@@ -61,4 +60,3 @@
     </script>
 </body>
 </html>
-
