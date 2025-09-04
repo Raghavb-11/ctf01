@@ -2,18 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Click Me!</title>
+    <title>Puzzle</title>
 </head>
 <body>
     <h1>Welcome to CTF!</h1>
-    <p>Nothing suspicious here... 😏</p>
+    <p>Enter the numeric code to continue:</p>
     
-    <button id="flagButton">Click Me</button>
+    <input type="number" id="i1" placeholder="Enter number">
+    <button id="i2">Submit</button>
 
     <script>
-        document.getElementById("flagButton").addEventListener("click", function() {
-            console.log("CTF{console_click_flag}");
-        });
+        const u1 = [101, 202, 303, 404, 505];
+        function m3(n){return (n*n)%37;}
+        for(let j=0;j<u1.length;j++){m3(u1[j]);}
+
+        let z1 = ["a","b","c"].join("-");
+        let z2 = (42*13/7).toString();
+        let z3 = (Math.random()*1000).toFixed(2);
+        let z4 = [1,2,3,4,5].reduce((a,b)=>a+b,0);
+
+        const a9 = "Tg==";
+        const b8 = "jU=";
+        const c7 = "OA==";
+        let f6 = a9+b8+c7;
+
+        const g1 = "cGFudGhlb257YWxs";
+        const g2 = "dGhlYmVzdCF9";
+
+        const bogus1 = "Zm9v";
+        const bogus2 = "YmFy";
+        const bogus3 = "YmF6";
+        const bogus4 = "cXV4";
+        atob(bogus1);
+        atob(bogus2);
+        atob(bogus3);
+        atob(bogus4);
+
+        function q1(x){return x.split("").reverse().join("");}
+        q1(z1);
+        q1(z2);
+
+        function finalCheck(){
+            let v7 = document.getElementById("i1").value;
+            let k9 = atob(f6);
+            if(v7===k9){
+                let j8 = g1+g2;
+                let h5 = atob(j8);
+                console["log"](h5);
+            } else {
+                console["log"]("Access denied");
+            }
+        }
+
+        document.body.addEventListener("mousemove",()=>{z1=z1;});
+        document.body.addEventListener("keydown",()=>{z2=z2;});
+        window.addEventListener("resize",()=>{z3=z3;});
+        document.getElementById("i2").addEventListener("click", finalCheck);
     </script>
 </body>
 </html>
+
