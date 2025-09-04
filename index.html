@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Click Me!</title>
+</head>
+<body>
+    <h1>Welcome to CTF!</h1>
+    <p>Nothing suspicious here... 😏</p>
+    
+    <button id="flagButton">Click Me</button>
+
+    <script>
+        document.getElementById("flagButton").addEventListener("click", function() {
+            console.log("CTF{console_click_flag}");
+        });
+    </script>
+</body>
+</html>
