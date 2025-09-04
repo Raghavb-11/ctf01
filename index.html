@@ -7,55 +7,56 @@
 <body>
     <h1>Welcome to CTF!</h1>
     <p>Enter the numeric code to continue:</p>
-    
+
     <input type="number" id="i1" placeholder="Enter number">
     <button id="i2">Submit</button>
 
     <script>
-        const u1 = [101, 202, 303, 404, 505];
-        function m3(n){return (n*n)%37;}
-        for(let j=0;j<u1.length;j++){m3(u1[j]);}
+        const a1 = [101,202,303,404,505];
+        function b2(n){return (n*n)%37;}
+        for(let j=0;j<a1.length;j++){b2(a1[j]);}
 
-        let z1 = ["a","b","c"].join("-");
-        let z2 = (42*13/7).toString();
-        let z3 = (Math.random()*1000).toFixed(2);
-        let z4 = [1,2,3,4,5].reduce((a,b)=>a+b,0);
+        let c3 = ["x","y","z"].join("-");
+        let d4 = (42*13/7).toString();
+        let e5 = (Math.random()*1000).toFixed(2);
+        let f6 = [1,2,3,4,5].reduce((p,q)=>p+q,0);
 
-        const a9 = "TmM=";
-        const b8 = "VQ==";
-        const c7 = "OA==";
-        let f6 = atob(a9)+atob(b8)+atob(c7);
+        let p1 = (3*2) + "";
+        let p2 = (15-10) + "";
+        let p3 = (1<<3) + "";
+        let pw = p1 + p2 + p3;
 
-        const g1 = "cGFudGhlb257YWxs";
-        const g2 = "dGhlYmVzdCF9";
+        let r1 = [112,97,110,116,104,101];
+        let r2 = [111,110,123,97,108,108,116];
+        let r3 = [104,101,98,101,115,116,33,125];
+        function g7(t){return t.map(x=>String.fromCharCode(x)).join("");}
+        let h8 = g7(r1);
+        let i9 = g7(r2);
+        let j0 = g7(r3);
 
-        const bogus1 = "Zm9v";
-        const bogus2 = "YmFy";
-        const bogus3 = "YmF6";
-        const bogus4 = "cXV4";
-        atob(bogus1);
-        atob(bogus2);
-        atob(bogus3);
-        atob(bogus4);
+        let k1 = "Zm9v";
+        let k2 = "YmFy";
+        let k3 = "YmF6";
+        let k4 = "cXV4";
+        k1+k2+k3+k4;
 
-        function q1(x){return x.split("").reverse().join("");}
-        q1(z1);
-        q1(z2);
+        function s1(x){return x.split("").reverse().join("");}
+        s1(c3);
+        s1(d4);
 
         function finalCheck(){
             let v7 = document.getElementById("i1").value;
-            if(v7===f6){
-                let j8 = g1+g2;
-                let h5 = atob(j8);
-                console["log"](h5);
+            if(v7===pw){
+                let flag = h8 + i9 + j0;
+                console["log"](flag);
             } else {
                 console["log"]("Access denied");
             }
         }
 
-        document.body.addEventListener("mousemove",()=>{z1=z1;});
-        document.body.addEventListener("keydown",()=>{z2=z2;});
-        window.addEventListener("resize",()=>{z3=z3;});
+        document.body.addEventListener("mousemove",()=>{c3=c3;});
+        document.body.addEventListener("keydown",()=>{d4=d4;});
+        window.addEventListener("resize",()=>{e5=e5;});
         document.getElementById("i2").addEventListener("click", finalCheck);
     </script>
 </body>
